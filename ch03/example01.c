@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-   int iResponse = 0;
+   char cResponse = '\0';
 
    printf("\tAC Control Unit\n");
-   printf("1\tTurn the AC on\n");
-   printf("2\tTurn the AC off\n\n");
+   printf("a\tTurn the AC on\n");
+   printf("b\tTurn the AC off\n\n");
    printf("Enter your selection: ");
-   scanf("%d", &iResponse);
+   scanf("%c", &cResponse);
 
-   if (iResponse == 1) {
+   if (cResponse == 'a') {
       printf("\nAC is now on\n");
    }
 
-   if (iResponse == 2) {
+   if (cResponse == 'b') {
       printf("\nAC is now off\n");
    }
 
